@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../lib/player_input'
 
 describe PlayerInput do
-  subject { Class.new { include PlayerInput}.new }
+  subject { Class.new { include PlayerInput }.new }
 
   let(:player1) { double('Player', name: 'player1', player_piece: 'X') }
 

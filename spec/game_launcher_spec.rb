@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/game_launcher'
 require_relative '../lib/play_game'
 
