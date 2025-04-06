@@ -1,3 +1,13 @@
+# frozen_string_literal: true
+
+# central class where all public methods for game play from other classes are called
+# includes PlayerInput, GameLogic, BoardDisplay
+# initialises one instance of Board and 2 instances of Player
+# saves @current_player as instance variable
+# public method: play_game - runs game flow of entire game
+# private methods: play_round, welcome_ui, switch_player, winner_ui
+# initialised from the LaunchGame class
+
 require_relative 'board'
 require_relative 'player'
 require_relative 'player_input'
@@ -20,7 +30,7 @@ class PlayGame
     welcome_ui
     play_round
     winner_ui
-    # play_again_prompt
+    play_again_prompt
   end
 
   private
